@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles_survey.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="wclassth=device-wclassth", initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">T Learning Survey Form</h1>
+      <p class="description">Help us to help you by filling out the form below</p>
+    </header>
+    <main>
+      <form class="survey-form">
+       <fieldset> 
+        <label class="name-label">Name:</label>
+        <input type="text" class="name" placeholder="Enter your Fullname" required/>
+        <label class="email-label">Email:</label>
+        <input type="email" class="email" size="64" maxLength="64"      placeholder="username@gmail.com" pattern=".+@gmail\.com" required/>
+        <label class="number-label">Number:</label>
+        <input type="number" class="number" placeholder="Enter your Phone number" step="1" min="11" max="11" required/>
+        <label class="dropdown-label">Age Range:</label>
+     <div class="custom-select">
+  <select class="dropdown">
+    <option value="0">Select age range</option>
+    <option value="1">less than 20 years</option>
+    <option value="2">Between 21 to 35 years</option>
+    <option value="3">Above 36 years</option>
+    
+  </select>
+</div>
+      </fieldset>
+      <fieldset class="language">
+        <label>Select Your preferred Language</label><br>
+        <input type="radio" name="lang" value="HTML" required/>HTML<br>
+        <input type="radio" name="lang" value="PHP"/>PHP<br>
+        <input type="radio" name="lang" value="Javascript" />Javascript<br>
+        <label class ="period-label">Select Learning Duration</label><br>
+        <div>
+        <input type="checkbox" name="period" value="3 Months" class="duration" required/>3 Months<br>
+        <input type="checkbox" name="period" value="6 Months" />6 Months<br>
+        <input type="checkbox" name="period" value="1 Year" />1 Year<br>
+      </div>
+      </fieldset>
+      <fieldset>
+        <label>Additional Comment</label>
+        <textarea class="desc" name="desc" rows="5" cols="50" placeholder ="Additional Comment" required>
+          </textarea>
+    </fieldset>
+    <input type="submit" class="submit" Value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

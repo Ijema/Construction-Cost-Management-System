@@ -1,0 +1,31 @@
+<div>
+    <form action="alertfrank.php" method="POST" class="boxin" id="dropdown">
+        <select name="type_post" required id="type_post" >
+            <option value="Select Post Type" selected>Select Post Type</option>
+            <option value="Airmail" >Airmail</option>
+            <option value="Airmail AD">Airmail AD</option>
+            <option value="Airmail Speed Post">Airmail Speed Post</option>
+            <option value="Speed Post">Speed Post</option>
+            <option value="Book Post">Book Post</option>
+            <option value="Ordinary Post">Ordinary Post</option>
+            <option value="Registered Post">Registered Post</option>
+            <option value="Registered AD">Registered AD</option>
+            <option value="Registered Parcel">Registered Parcel</option>
+            <option value="Parcel">Parcel</option>
+            <option value="Courier">Courier</option>
+        </select>
+        <br/>
+        <br/>
+        Current Frank Value <?php echo '<input type="number" name="value_frank" value="">'; ?> <br/>
+        <br/>
+        New Frank Value
+        <input type="number" name="new_frank" placeholder="New Frank value"/>
+        <br/>
+        <br/>
+        <input type="submit" name="submit" value="Change Value" id="sub"/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </form>
+	

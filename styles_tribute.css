@@ -1,0 +1,74 @@
+  html{
+    background-color:#9fafca;
+	overflow:hidden;
+ }
+header{  
+	text-align:center;
+  line-height:10px;
+  padding-top:7px;
+   font-family: "Times New Roman", Times,
+   serif;
+   color:#993441;
+}
+h1{
+	padding-top:0px;
+	margin-top:0px;
+}
+header .title{
+  color: black;
+  font-size:18;
+  font-style:italic;
+  font-family: serif;
+  padding-bottom: 5px;
+}
+.main{
+   border-radius: 5px;
+  background-color: #f2f2f2;
+  width:60%;
+  margin:auto;
+  max-width:2000px;
+  padding:15px 30px 10px 30px;
+  margin-bottom:100px;
+ 
+}
+
+p.tribute-info{
+   font-family: Times New Roman, Times, serif;
+   font-size:20px;
+   line-height:24px;
+   text-align: justify;
+}
+.img-caption{
+  font-family: Times New Roman, Times, serif;
+   font-size:20px;
+   background-color: #f2f2f2;
+   text-align:center;
+   padding-top:10px;
+}
+p{
+  text-decoration:justify;
+   font-family: Times New Roman, Times, serif;
+   font-size:20px;
+   white-space: pre-wrap;
+}
+figure{
+  background-color: f2f2f2; 
+  overflow: hidden;
+  padding:0px;
+  margin:0px;
+
+}
+.img-div .image{
+  max-width:100%;
+  height:auto;
+  max-height:300px;
+  padding: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+p,a{
+  text-decoration:none;
+  background-color: #f2f2f2;
+}
