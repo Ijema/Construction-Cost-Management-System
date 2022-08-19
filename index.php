@@ -43,7 +43,7 @@
 
       <div class="projects-grid">
         <a href="index1.php" target="" class="project project-tile">
-          <img class="project-image" src="./images/construction-site.jpg" alt="project">
+          <img class="project-image" src="images/construction-site.jpg" alt="project">
           <p class="project-title">
             
             Construction Cost Management System
