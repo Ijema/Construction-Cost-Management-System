@@ -14,13 +14,13 @@
     <nav id="navbar" class="nav">
       <ul class="nav1">
         <li>
-          <a href="#welcome-section">About</a>
+          	<a href="#welcome-section">About</a>
         </li>
         <li>
-          <a href="#projects">Work</a>
+          	<a href="#projects">Work</a>
         </li>
         <li>
-          
+		<a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
