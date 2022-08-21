@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<?php 
-session_start();
-include('./db_connect.php');
-  ob_start();
-  // if(!isset($_SESSION['system'])){
 
-    $system = $conn->query("SELECT * FROM system_settings")->fetch_array();
-    foreach($system as $k => $v){
-      $_SESSION['system'][$k] = $v;
-    }
-  // }
-  ob_end_flush();
-?>
-<?php 
-if(isset($_SESSION['login_id']))
-header("location:index1.php?page=home");
-
-?>
-<?php include 'header.php' ?>
 
 <body class="hold-transition login-page" style="background-image: url('images/construction_cover.jpg')">
 <div class="login-box">
