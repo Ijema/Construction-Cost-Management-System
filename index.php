@@ -77,7 +77,7 @@
             
           </p>
         </a>
-        <a href="tribute_page" target="_blank" class="project project-tile">
+        <a href="/tribute_page.html" class="project project-tile">
           <img class="project-image" src="/images/tribute-image.jpg" alt="project">
           <p class="project-title">
             
@@ -85,7 +85,7 @@
             
           </p>
         </a>
-        <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
+        <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" class="project project-tile">
           <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project">
           <p class="project-title">
             
