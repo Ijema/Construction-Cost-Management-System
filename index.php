@@ -42,8 +42,8 @@
       <h2 class="projects-section-header">These are some of my frontend projects</h2>
 
       <div class="projects-grid">
-        <a href="index1.php" target="" class="project project-tile">
-          <img class="project-image" src="images/construction-site.jpg" alt="project">
+        <a href="/index1.php" target="" class="project project-tile">
+          <img class="project-image" src="/images/construction-site.jpg" alt="project">
           <p class="project-title">
             
             Construction Cost Management System
@@ -69,8 +69,8 @@
 		</div>
 		<h2>These are my Web Design Projects</h2>
 		<div class="projects-grid">
-        <a href="survey_form.html" class="project project-tile">
-          <img class="project-image" src="./images/survey-image.jpg" alt="survey form">
+        <a href="/survey_form.html" class="project project-tile">
+          <img class="project-image" src="/images/survey-image.jpg" alt="survey form">
           <p class="project-title">
             
             Survey Form
