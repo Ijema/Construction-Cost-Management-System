@@ -15,11 +15,11 @@
   }
   ob_end_flush();
 
-	include 'header.php' 
+	include './header.php' 
 ?>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
-  <?php include 'topbar.php' ?>
-  <?php include 'sidebar.php' ?>
+  <?php include './topbar.php' ?>
+  <?php include './sidebar.php' ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
