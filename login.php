@@ -15,7 +15,7 @@ include('./db_connect.php');
 ?>
 <?php 
 if(isset($_SESSION['login_id']))
-header("location:index1.php?page=home");
+header("location:./index1.php?page=home");
 
 ?>
 <?php include './header.php' ?>
