@@ -22,7 +22,7 @@
             </a>
           </li>  
 		  
-		    <?php if($_SESSION['login_type'] == "Admin"): ?>
+		<!-- <?php if($_SESSION['login_type'] == "Admin"): ?>-->
            <li class="nav-item">
                 <a href="#" class="nav-link nav-estimates">
                    <i class="nav-icon fas fa-layer-group"></i>
@@ -43,7 +43,7 @@
 					</li>
 				</ul>	
           </li>
-          <?php endif; ?>
+         <!-- <?php endif; ?> -->
 		  
           <li class="nav-item">
             <a href="#" class="nav-link nav-edit_project nav-view_project">
