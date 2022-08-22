@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-  ini_set('display_errors', '1');
 session_start();
 include('./db_connect.php');
   ob_start();
@@ -19,7 +18,7 @@ if(isset($_SESSION['login_id']))
 header("location:index1.php?page=home");
 
 ?>
-<?php include 'header.php' ?>
+<?php include './header.php' ?>
 <body class="hold-transition login-page" style="background-image: url('images/construction_cover.jpg')">
 <div class="login-box">
   <div class="login-logo">
