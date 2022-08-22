@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-  init_set('display_errors', 1);
+  ini_set('display_errors', '1');
 session_start();
 include('./db_connect.php');
   ob_start();
