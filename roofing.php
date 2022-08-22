@@ -1,4 +1,6 @@
-<?php	include 'db_connect.php'; ?>
+<?php	
+ini_set('display_errors', '1');
+include 'db_connect.php'; ?>
 
 			<div class="card-tools">
 				<button class="btn btn-flat btn-sm bg-gradient-success btn-success print" id="print" onclick="display()"><i class="fa fa-print"></i> Print</button>
