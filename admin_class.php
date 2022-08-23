@@ -1,12 +1,11 @@
 <?php
 session_start();
-ini_set('display_errors', '1');
 Class Action {
 	private $db;
 
 	public function __construct() {
 		ob_start();
-   	include '/db_connect.php';
+   	include 'db_connect.php';
     
     $this->db = $conn;
 	}
