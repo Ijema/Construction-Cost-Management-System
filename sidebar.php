@@ -14,7 +14,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="false">
 		
           <li class="nav-item dropdown">
-            <a href="./" class="nav-link nav-home">
+            <a href="./index1.php" class="nav-link nav-home">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -26,7 +26,7 @@
            <li class="nav-item">
                 <a href="#" class="nav-link nav-estimates">
                    <i class="nav-icon fas fa-layer-group"></i>
-                  <p>Estimate Project<i class="right fas fa-angle-left"></p>
+			<p>Estimate Project<i class="right fas fa-angle-left"></i></p>
                  </a>
 				 <ul class="nav nav-treeview">
 					<li class="nav-item">
@@ -43,7 +43,7 @@
 					</li>
 				</ul>	
           </li>
-         <!-- <?php endif; ?> -->
+          <?php endif; ?> 
 		  
           <li class="nav-item">
             <a href="#" class="nav-link nav-edit_project nav-view_project">
