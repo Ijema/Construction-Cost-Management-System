@@ -1,65 +1,9 @@
-<?php include('db_connect.php') ?>
+<?php include('./db_connect.php') ?>
 <?php
 $twhere ="";
 if($_SESSION['login_type'] != 1)
   $twhere = "  ";
 ?>
-<?php
-  function convert2cen($value,$unit){
-    if($unit=='C'){
-      return $value;
-    }else if($unit=='F'){
-      $cen = ($value - 32) / 1.8;
-      	return round($cen,2);
-      }
-  }
-?>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
-<style>
-  body{
-    background-color:#aaa!important;
-  }
-  .wrapper .single{
-    color:#fff;
-    width:100%;
-    padding:10px;
-    text-align:center;
-    margin-bottom:10px;
-  }
-  .aqi-value{
-    font-family : "Noto Serif","Palatino Linotype","Book Antiqua","URW Palladio L";
-    font-size:40px;
-    font-weight:bold;
-	color:#000;
-  }
-  h1{
-    text-align: center;
-    font-size:3em;
-  }
-  .forecast-block{
-  	background-color: #3b463d!important;
-  	width:20% !important;
-  }
-  .title{
-  	background-color:#007bff;
-  	width: 100%;
-  	color:#fff;
-  	margin-bottom:0px;
-  	padding-top:10px;
-  	padding-bottom: 5px;
-  }
-  .bordered{
-  	border:1px solid #fff;
-  }
-  .weather-icon{
-  	width:100%;
-  	font-weight: bold;
-  	background-color: #3b463d;
-  	padding:10px;
-  	border: 1px solid #fff;
-	color:#fff;
-  }
-</style>
 <!-- Info boxes -->
  <div class="col-12">
           <div class="card">
@@ -78,10 +22,10 @@ if($_SESSION['login_type'] != 1)
       $where = " where concat('[',REPLACE(user_ids,',','],['),']') LIKE '%[{$_SESSION['login_id']}]%' ";
     }
      $where2 = "";
-    if($_SESSION['login_type'] == "Admin"){
-      $where2 = " where p.team_member = '{$_SESSION['login_type']}' ";
-    }else{
-      echo "hhgh";
+    if($_SESSION['login_type'] == 2){
+      $where2 = " where p.manager_id = '{$_SESSION['login_id']}' ";
+    }elseif($_SESSION['login_type'] == 3){
+      $where2 = " where concat('[',REPLACE(p.user_ids,',','],['),']') LIKE '%[{$_SESSION['login_id']}]%' ";
     }
     ?>
         
@@ -175,7 +119,7 @@ if($_SESSION['login_type'] != 1)
                           ?>
                       </td>
                       <td>
-                        <a class="btn btn-primary btn-sm" href="./index.php?page=view_project&id=<?php echo $row['id'] ?>">
+                        <a class="btn btn-primary btn-sm" href="./index1.php?page=view_project&id=<?php echo $row['id'] ?>">
                               <i class="fas fa-folder">
                               </i>
                               View
@@ -206,14 +150,17 @@ if($_SESSION['login_type'] != 1)
            <div class="col-12 col-sm-6 col-md-12">
             <div class="small-box bg-light shadow-sm border">
               <div class="inner">
-                <h3><?php echo $conn->query("SELECT * FROM task_list where team_member = '{$_SESSION['login_type']}'")->num_rows; ?></h3>
+                <h3><?php echo $conn->query("SELECT t.*,p.name as pname,p.start_date,p.status as pstatus, p.end_date,p.id as pid FROM task_list t inner join project_list p on p.id = t.id $where2")->num_rows; ?></h3>
                 <p>Total Tasks</p>
               </div>
-			   <div class="icon">
+              <div class="icon">
                 <i class="fa fa-tasks"></i>
               </div>
             </div>
           </div>
+      </div>
+        </div>
+      </div>
       
 
 			  <!-- the DIV that will contain the widget -->
