@@ -1,4 +1,4 @@
-<?php include'/db_connect.php' ?>
+<?php include 'db_connect.php' ?>
 <div class="col-lg-12">
 	<div class="card card-outline card-success">
 		<div class="card-header">
@@ -38,7 +38,7 @@
 					
 					<?php
 					$i = 1;
-					$member = $_SESSION['login_name'] . "( " . $_SESSION['login_type'] . " )";
+					$member = $_SESSION['login_type'];
 					$stat = array("Pending","Started","On-Progress","On-Hold","Over Due","Done");
 					$qry = $conn->query("SELECT * from task_list WHERE team_member = '$member' ");
 					while($row= $qry->fetch_assoc() ):
