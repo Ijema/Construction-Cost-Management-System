@@ -63,7 +63,7 @@
 
 					?>
 					<tr>
-						<td class="text-center"><?php echo $i++ ?></td>
+						<td class="text-center"><?php echo $_SESSION['login_name'] ?></td>
 						<td>
 							<p><b><?php echo ucwords($row['name']) ?></b></p>
 						</td>
