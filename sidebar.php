@@ -63,14 +63,17 @@
                 </a>
               </li>
             <?php endif; ?>
+		    
               <li class="nav-item">
                 <a href="./index1.php?page=project_list" class="nav-link nav-project_list tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
                   <p>List</p>
                 </a>
               </li>
+		    
             </ul>
           </li> 
+		
           <li class="nav-item">
             <a href="#" class="nav-link nav-edit_project nav-view_project">
               <i class="nav-icon fas fa-layer-group"></i>
@@ -79,6 +82,7 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+		  
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="./index1.php?page=task_list" class="nav-link nav-task_list tree-item">
@@ -86,20 +90,24 @@
                   <p>Add/View Tasks</p>
                 </a>
               </li>
+		    
               <li class="nav-item">
                 <a href="./index1.php?page=assign_tasks" class="nav-link nav-assign_tasks tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
                   <p>Assign tasks</p>
                 </a>
               </li>
+		    
               <li class="nav-item">
                 <a href="./index1.php?page=assign_tasks" class="nav-link nav-assigned_tasks tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
                   <p>Assigned tasks</p>
                 </a>
               </li>
+		    
             </ul>
           </li>
+		
           <?php if($_SESSION['login_type'] == "Admin"): ?>
           <li class="nav-item">
             <a href="#" class="nav-link nav-edit_user">
@@ -125,6 +133,7 @@
             </ul>
           </li>
         <?php endif; ?>
+		
 		   <?php if($_SESSION['login_type'] == "Admin"): ?>
            <li class="nav-item">
                 <a href="./index1.php?page=log" class="nav-link nav-log">
@@ -133,6 +142,7 @@
                 </a>
           </li>
           <?php endif; ?>
+		
            <li class="nav-item">
                 <a href="./" class="nav-link nav-index">
                   <i class="fa fa-home nav-icon"></i>
