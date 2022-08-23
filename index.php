@@ -43,7 +43,7 @@
 
       <div class="projects-grid">
         <a href="/index1.php" target="" class="project project-tile">
-          <img class="project-image" src="/images/construction-site.JPG" alt="project">
+          <img class="project-image" src="images/construction-site.PNG" alt="project">
           <p class="project-title">
             
             Construction Cost Management System
@@ -70,7 +70,7 @@
 		<h2>These are my Web Design Projects</h2>
 		<div class="projects-grid">
         <a href="/survey_form.html" class="project project-tile">
-          <img class="project-image" src="/images/survey-image.JPG" alt="survey form">
+          <img class="project-image" src="images/survey-image.JPG" alt="survey form">
           <p class="project-title">
             
             Survey Form
@@ -78,7 +78,7 @@
           </p>
         </a>
         <a href="/tribute_page.html" class="project project-tile">
-          <img class="project-image" src="/images/tribute-image.JPG" alt="project">
+          <img class="project-image" src="images/tribute-image.JPG" alt="project">
           <p class="project-title">
             
             Tribute Page
