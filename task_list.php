@@ -1,10 +1,10 @@
-<?php include'./db_connect.php' ?>
+<?php include'/db_connect.php' ?>
 <div class="col-lg-12">
 	<div class="card card-outline card-success">
 		<div class="card-header">
 			<div class="card-tools">
 				<?php if($_SESSION['login_type'] == "Admin"): ?>
-				<a class="btn btn-block btn-sm btn-default btn-flat border-primary" href="./index.php?page=manage_task"><i class="fa fa-plus"></i> Add New Task</a>
+				<a class="btn btn-block btn-sm btn-default btn-flat border-primary" href="/index.php?page=manage_task"><i class="fa fa-plus"></i> Add New Task</a>
 				<?php endif; ?>
 			</div>
 		</div>
