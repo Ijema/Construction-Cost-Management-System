@@ -2,7 +2,7 @@
     <div class="dropdown">
    	<a href="./" class="brand-link">
         <?php if($_SESSION['login_type'] == "Admin"): ?>
-        <h3 class="text-center p-0 m-0"><b>ADD</b></h3>
+        <h3 class="text-center p-0 m-0"><b>ADMIN</b></h3>
         <?php else: ?>
         <h3 class="text-center p-0 m-0"><b>USER</b></h3>
         <?php endif; ?>
@@ -22,11 +22,11 @@
             </a>
           </li>  
 		  
-		<!-- <?php if($_SESSION['login_type'] == "Admin"): ?>-->
+	<?php if($_SESSION['login_type'] == "Admin"): ?>
            <li class="nav-item">
                 <a href="#" class="nav-link nav-estimates">
                    <i class="nav-icon fas fa-layer-group"></i>
-                  <p>Estimate Project<i class="right fas fa-angle-left"></i></p>
+                  <p>Estimate Project<i class="right fas fa-angle-left"></p>
                  </a>
 				 <ul class="nav nav-treeview">
 					<li class="nav-item">
@@ -53,6 +53,7 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+		  
             <ul class="nav nav-treeview">
             <?php if($_SESSION['login_type'] == "Admin"): ?>
               <li class="nav-item">
