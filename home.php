@@ -62,7 +62,7 @@ if($_SESSION['login_type'] != 1)
                 }elseif($_SESSION['login_type'] == 3){
                   $where = " where concat('[',REPLACE(user_ids,',','],['),']') LIKE '%[{$_SESSION['login_id']}]%' ";
                 }
-                $qry = $conn->query("SELECT * FROM project_list $where order by name asc");
+                $qry = $conn->query("SELECT * FROM project_list $where order by name asc", $conn);
                 while($row= $qry->fetch_assoc()):
                   $prog= 0;
                 $tprog = $conn->query("SELECT * FROM task_list where id = {$row['id']}")->num_rows;
